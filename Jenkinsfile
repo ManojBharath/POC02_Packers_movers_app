@@ -5,7 +5,7 @@ pipeline {
         maven 'maven3'
         jdk 'jdk11'
     }
-/*
+
     stages {
         stage('Checkout Code') {
             steps {
@@ -37,7 +37,7 @@ pipeline {
                 sh 'mvn package'
             }
         }
-  */      
+        
         stage("Check Target files are cretaed") {
             steps {
                 sh '''
@@ -59,7 +59,7 @@ pipeline {
             }
             
         }
-    /*    
+        
         stage("Docker build image from artifact") {
             steps {
                 sh "docker build -t packers-movers ."
@@ -93,6 +93,6 @@ pipeline {
                 """
             }
         }
-    */
+    
     } // End of Satges
 } // End of pipeline
