@@ -94,5 +94,5 @@ pipeline {
             }
         }
     
-    } // End of Satges
+    } // End of Stages
 } // End of pipeline
